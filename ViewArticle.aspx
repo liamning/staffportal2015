@@ -335,8 +335,8 @@
 
             </style>
 
-         
-<div style="position: absolute; left: 8%;width: 92%;   top: 0px; ">
+
+<div style="position: absolute; left: 10%;width: 92%;   top: 0px; ">
 
     <div id="myModal" class="reveal-modal">
         <h2 style="margin-top:0px;margin-bottom:10px;font-size:18pt;">Suggestion Box</h2>
@@ -356,7 +356,7 @@
                     <input type="text" id="txtSuggestionEmail" style="width:180px;" value="<%=Session["EMAIL"] %>" disabled="disabled"/>
                 </td>
             </tr>
-            <tr>
+            <tr style="display:none;">
                 <td colspan="2">
                     Type of Feedback*<br />
                     <select id="comSuggestionType" runat="server" style="width:180px;"> 
@@ -376,9 +376,9 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    Comments* 
+                    Comments 
                     <textarea style="width: 100%; height: 80px;" runat="server" id="txtSuggestion"></textarea>
-                    <label style="color:blue;">Remarks:  The fields marked with "*" are required.</label>
+                    <label style="color:blue; display:none;">Remarks:  The fields marked with "*" are required.</label>
                 </td>
             </tr>
             <tr>
@@ -392,6 +392,7 @@
 
 </div>
 
+  
   
     </form> 
 </body>
